@@ -16,7 +16,7 @@ app.use(express.json({extended: true}));
 
 
 // creando el puerto:
-const PORT = process.env.PORT || 4000;
+const port = process.env.port || 4000;
 
 // importar rutas
 // ruta para la creacion de usuarios:
@@ -35,6 +35,6 @@ app.get('/', (req, res) => {
 })
 
 // arrancar la app:
-app.listen(PORT, () => {
-    console.log(`El servidor esta corriendo en el puerto ${PORT}`);
+app.listen(port, '0.0.0.0', () => {
+    console.log(`El servidor esta corriendo en el puerto ${port}`);
 });
