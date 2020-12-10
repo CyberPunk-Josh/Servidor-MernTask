@@ -31,7 +31,7 @@ app.use('/api/tareas', require('./routes/tareas'));
 
 // definir la pagina principal:
 app.get('/', (req, res) => {
-    res.send('Hola mundo');
+    
 })
 
 // arrancar la app:
