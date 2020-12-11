@@ -16,7 +16,7 @@ app.use(express.json({extended: true}));
 
 
 // creando el puerto:
-const port = process.env.port || 4000;
+const port = process.env.PORT || 4000;
 
 // importar rutas
 // ruta para la creacion de usuarios:
