@@ -29,11 +29,6 @@ app.use('/api/proyectos', require('./routes/proyectos'));
 app.use('/api/tareas', require('./routes/tareas'));
 
 
-// definir la pagina principal:
-app.get('/', (req, res) => {
-    
-})
-
 // arrancar la app:
 app.listen(port, '0.0.0.0', () => {
     console.log(`El servidor esta corriendo en el puerto ${port}`);
